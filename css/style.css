@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  Font-size: 15px;
+  background-color: var(hsl(0, 0%, 98%));
+  height: 922px;
+  position: relative;
+}
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+main {
+  width: 1100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+}
+header {
+  width: 500px;
+  margin: 0 auto;
+}
+header h1 {
+  color: var(--Grayish-Blue);
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+}
+header .sub-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: var(--Very-Dark-Blue);
+  text-align: center;
+}
+header .parag {
+  color: var(--Grayish-Blue);
+  text-align: center;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+section > div {
+  width: 340px;
+}
+section div h3 {
+  color: var(--Very-Dark-Blue);
+  margin-bottom: 10px;
+}
+section div p {
+  color: var(--Grayish-Blue);
+}
+.Supervisor {
+  border-top: solid 3px var(--Cyan);
+  align-self: center;
+}
+.Team-Builder {
+  border-top: solid 3px var(--Red);
+  margin-bottom: 30px;
+}
+.Calculator {
+  border-top: solid 3px var(--Blue);
+  align-self: center;
+}
+.Karma {
+  border-top: solid 3px var(--Orange);
+}
+.Supervisor,
+.Karma,
+.Calculator,
+.Team-Builder {
+  height: 220px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 3px 0px 2px hsl(0, 0%, 98%);
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: relative;
+}
+section img {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+@media (max-width: 768px) {
+  body {
+    height: 1250px;
+  }
+  main {
+    width: 320px;
+  }
+  header {
+    width: 300px;
+  }
+  header h1 {
+    font-size: 23px;
+    margin-bottom: 0;
+  }
+  header .sub-title {
+    font-size: 23px;
+  }
+  section {
+    flex-direction: column;
+  }
+  section > div {
+    width: 300px;
+  }
+  .Supervisor,
+  .Karma,
+  .Calculator,
+  .Team-Builder {
+    margin-bottom: 20px;
+  }
+  .Karma,
+  .Team-Builder {
+    width: 300px;
+    margin-left: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1120px) {
+  main {
+    width: 960px;
+  }
+  section > div {
+    width: 300px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  main {
+    width: 760px;
+  }
+  section > div {
+    width: 240px;
+  }
+}
